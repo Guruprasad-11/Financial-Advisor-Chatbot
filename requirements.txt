@@ -1,0 +1,7 @@
+
+faiss-cpu
+chromadb
+yfinance
+sentence-transformers
+google-generativeai
+ipython
