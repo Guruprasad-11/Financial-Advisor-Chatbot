@@ -3,6 +3,8 @@
 
 This project implements a Retrieval-Augmented Generation (RAG)-based chatbot for providing **personalized financial investment advice**. The system uses a hybrid document retrieval strategy with a large language model to generate customized investment suggestions based on user-defined preferences.
 
+---
+
 ## Features
 
 - **Personalized Investment Advice** using user preferences (e.g., high ROI, low volatility).
@@ -11,12 +13,16 @@ This project implements a Retrieval-Augmented Generation (RAG)-based chatbot for
 - **Language Generation via Gemini API** for detailed, natural responses.
 - **Real-Time Market Data** using `yfinance`.
 
+---
+
 ## Architecture
 
 ```
 User Input → ChromaDB Filter → FAISS Semantic Search → Gemini LLM → Final Response
                              ↘ yFinance API (for live stock info)
 ```
+
+---
 
 ## Technologies Used
 
@@ -28,6 +34,8 @@ User Input → ChromaDB Filter → FAISS Semantic Search → Gemini LLM → Fina
 - SentenceTransformers (MiniLM for embeddings)
 - LangChain (retriever management)
 
+---
+
 ## Setup Instructions
 
 1. Clone the repo or download this notebook.
@@ -38,12 +46,16 @@ User Input → ChromaDB Filter → FAISS Semantic Search → Gemini LLM → Fina
 3. Add your Gemini API key in the appropriate cell.
 4. Run the notebook in Google Colab (recommended for Drive integration).
 
+---
+
 ## How It Works
 
 1. User provides investment preferences.
 2. System retrieves relevant stock descriptions from ChromaDB and FAISS.
 3. Gemini API explains why each stock matches the preference.
 4. Results are displayed in Markdown format with clear recommendations.
+
+---
 
 ## Example Output
 
@@ -57,6 +69,18 @@ Explanation:
 Stock: AAPL
 Reason: AAPL is a blue-chip technology stock with strong long-term growth potential...
 ```
+
+---
+
+## Team Members
+
+This project was developed as part of the *Natural Language Processing* course.
+
+- **M K Guruprasad** *(Myself)*  
+- [**Manda Bala Sumanth**](https://github.com/Sumanth0019)  
+- [**Mudrageda Bhargava Phani Sriram**](https://github.com/Sriram77805)
+
+---
 
 ## Future Enhancements
 
